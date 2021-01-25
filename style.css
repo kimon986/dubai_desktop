@@ -1,0 +1,909 @@
+/***DESKTOP****/
+
+/***EVERYTHING***/
+
+@media screen and (min-width: 700px) {
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.fa-bars {
+    display: none;
+}
+
+body > header > h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#mobile {
+    display: none;
+}
+
+/***HEADING***/
+
+header h2 {
+    font-weight: bold;
+    font-size: 32px;
+    width: 80%;
+    margin: 3% 10% 0 10%;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    width: 80%;
+    margin: 3% 10% 3% 10%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 100%;
+}
+
+header nav ul li {
+    margin-right: 1%;
+}
+
+/***HERO***/
+
+.hero-section {
+    background: url(images_new/bed1.jpg);
+    margin: 0 0 3% 0;
+    color: white;
+    background-size: cover; 
+    /* height: 550px; */
+    height: auto;
+    width: 100vw;
+    background-position: center; 
+}
+
+.hero-section .button-div {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 3% 0 3% 0;
+}
+
+.hero-section > .button-div > button {
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: rgb(249, 112, 7);
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.hero-section > h1 {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: 100;
+    padding-bottom: 3%;
+}
+
+.hero-section > section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-section > section > div > .rotate {
+    transform: rotate(90deg);
+}
+
+.hero-section > section > .text-div {
+    padding-top: 10%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.hero-section > section > .prev {
+    position: relative;
+    top: 30px;
+}
+
+.hero-section > section > .aft {
+    position: relative;
+    top: 30px;
+}
+
+.hero-section > section > .prev:after {
+    content: "__________";
+    position: relative;
+    top: -5px;
+    left: 7px;
+}
+
+.hero-section > section > .aft:before {
+    content: "__________";
+    position: relative;
+    top: -5px;
+    right: 7px;
+}
+
+.fa-caret-left {
+    position: relative;
+    top: 21px;
+    right: 14px;
+    font-size: 32px;
+}
+
+.fa-caret-right {
+    position: relative;
+    left: 50px;
+    bottom: 30px;
+    font-size: 32px;
+}
+
+
+/***MAIN CONTENT***/
+
+main {
+    display: flex;
+    flex-direction:column;
+    height:130vh;
+    margin-right: 7%;
+    margin-left: 7%;
+  }
+  
+  .content {
+    display: flex;
+    min-height: 105%;
+    justify-content: space-between;
+  }
+  
+  .slider {
+    display: flex;
+  }
+  
+  .slider > div:first-child {
+    width: 270px;
+    height: 130px;
+    margin: 10px 30px 10px 10px;
+  }
+
+  .slider > div:not(:first-child) {
+      width: 270px;
+      height: 100px;
+      margin: 20px 30px 20px 20px;
+  }
+  
+  aside {
+    display: flex;
+    flex-direction:column;
+    width:25%;
+    margin: 5px 10px;
+  }
+  
+  aside > div {
+    width: auto;
+    height: 379px;
+    margin: 5px 0;
+  }
+  
+  .articles {
+    display: flex;
+    flex-direction:column;
+    width: 85%;
+    margin: 5px 10px;
+  }
+  
+  .news {
+    display: flex;
+    height: 300%;
+    margin: 20px;
+  }
+  
+  .article_footer {
+    height: 20%;
+    margin: 5px;
+  }
+  
+  .main_new {
+    height: 105%;
+    width: 55%;
+    /* background-color: rgba(0,0,0, 0.8); */
+    background: url(images_new/bed2.png);
+    background-position: center;
+    margin-right: 5%;
+  }
+  
+  .side_news {
+    height: 105%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .side_new {
+    height: 45%;
+    margin: 5px;
+    display: flex;
+  }
+  
+  .side_new > div {
+    width:45%;
+    height: auto;
+  }
+  
+  .side_new > div:last-child {
+    margin: 5px;
+  }
+  
+  .reviews {
+    height: 300%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20%;
+  }
+  
+  .review_content {
+    display: flex;
+    flex-wrap:wrap;
+    height: calc(100% - 30px);
+    justify-content: space-around;
+    margin-left: -6%;
+    margin-top: 3%;
+  }
+  
+  .review_content > div{
+    width: 35%;
+    height: 135%;
+    margin: 5px;
+  }
+  
+  .pagination {
+    height: 30px;
+  }
+
+  .heading_text {
+    font-weight: bold;
+    margin-left: 4%;
+    margin-top: 32%;
+  }
+
+  .content_text {
+      margin-left: 4%;
+  }
+
+  /***NEWS HEADING***/
+  .news_heading {
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-left: 2.5%;
+  }
+
+  /***SIDE NEWS***/
+
+  .side_new_image {
+      background: url(images_new/bed3.png);
+  }
+
+  .side_new_image_2 {
+      background: url(images_new/bed4.png);
+  }
+
+  .side_new_image_3 {
+      background: url(images_new/bed5.png);
+  }
+
+  .side_new_text > p:first-child {
+    font-weight: bold;
+    font-size: 90%;
+  }
+
+  .side_new_text > p:last-child {
+      font-size: 90%;
+  }
+
+  .orange {
+    color:rgb(249, 112, 7);
+  }
+
+  .special2 {
+    color:rgb(249, 112, 7);
+    position: relative;
+    /*    TODO: just - "left: -45px and top: 9px;" */
+    left: 105px;
+    top: 9px;
+    }
+
+    /***REVIEWS IMAGES***/
+    .review_content_image {
+        background: url(images_new/1.png);
+        background-position: center;
+    }
+
+    .review_content_image_2 {
+        background: url(images_new/2.png);
+        background-position: center;
+    }
+
+    .review_content_image_3 {
+        background: url(images_new/3.png);
+        background-position: center;
+    }
+
+    .review_content_image_4 {
+        background: url(images_new/4.png);
+        background-position: center;
+    }
+
+    /***SLIDER***/
+
+    .slider_image {
+        background: url(images_new/watch.png);
+    }
+
+    .slider_image_2 {
+        background: url(images_new/bottom1.png);
+    }
+
+    .slider_image_3 {
+        background: url(images_new/bottom2.png);
+    }
+
+    .slider_image_4 {
+        background: url(images_new/bottom3.png);
+    }
+
+    /* footer {
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(241, 232, 232, 0.856);
+        margin-top: 15%;
+    } */
+
+    footer {
+        margin-top: 15%;
+        background-color: rgba(211, 211, 211, 0.5);
+    }
+    
+    footer div {
+        display: flex;
+        justify-content: space-around;
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        letter-spacing: 1px;
+    }
+    
+    footer ul {
+        list-style: none;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 12px;
+        padding-bottom: 2%;
+        border-bottom: 1px solid rgb(174, 171, 171);
+    }
+    
+    footer > .div-small > small {
+        font-size: 10px;
+        color: rgb(174, 171, 171);
+    }
+    
+    footer > .div-small {
+        justify-content: flex-end;
+        width: 90%;
+    }
+
+    /***ASIDE***/
+    .aside_image {
+        background: url(images_new/hotairballoon.png);
+        background-position: center;
+    }
+
+    .aside_image_2 {
+        background: url(images_new/waterpic.png);
+        background-position: center;
+    }
+
+    .aside_image_3 {
+        background: url(images_new/bigbird.png);
+        background-position: center;
+    }
+
+    /***arrow thingy***/
+    .arrows {
+        margin: 420px 0 0 0;
+        text-align: center;
+    }
+
+    .arrows i {
+        color: gray;
+    }
+
+    .arrows p {
+        display: inline-block;
+        margin-right: 45px;
+    }
+
+    .first {
+        /*TODO: Don't forget about box size*/
+        border-bottom: 1px rgb(249, 112, 7) solid;
+        padding-right: 17px;
+        padding-left: 17px;
+        padding-top: 7px;
+        padding-bottom: 8px;
+        margin-left: 25px;
+        color:rgb(249, 112, 7);
+    }
+
+    /***ballet***/
+
+    .article_footer {
+        background: url(images_new/ballet.png);
+        background-position: center center;
+        padding-bottom: 15%;
+        margin-top: 30%;
+    }
+    
+    .reviews > .review_content > .review_content_text {
+        width: 35%;
+        height: 55%;
+        margin: 5px;
+    }
+    
+    .review_title {
+        font-weight: bold;
+        font-size: 120%;
+        padding-bottom: 1.5%;
+    }
+
+    .special {
+        position: relative;
+        left: 10;
+        top: 10;
+        color:rgb(249, 112, 7);
+    }
+
+    .aside_image .button-div {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 75% 0 3% 0;
+    }
+    
+    .aside_image > .button-div > button {
+        padding: 10px 25px;
+        font-size: 16px;
+        background-color: rgb(249, 112, 7);
+        border: none;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 2px;
+    }
+
+    .aside_image > .button-div > button > i {
+        margin-left: 8px;
+    }
+
+    .balloon_heading {
+        font-size: 150%;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 10%;
+    }
+
+    .aside_image_2 .button-div {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 75% 0 3% 0;
+    }
+    
+    .aside_image_2 > .button-div > button {
+        padding: 10px 25px;
+        font-size: 16px;
+        background-color: rgba(46, 44, 44, 0.164);
+        border: 2px solid rgb(249, 112, 7);
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 2px;
+    }
+
+    .aside_image_2 > .button-div > button > i {
+        margin-left: 8px;
+    }
+
+    .slider > .slider_image > .time {
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 15%;
+    }
+
+    .slider .button-div {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 7% 0 3% 0;
+    }
+    
+    .slider > .slider_image > .button-div > button {
+        padding: 7px 20px;
+        font-size: 16px;
+        background-color: rgba(46, 44, 44, 0.164);
+        border: 2px solid white;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 2px;
+    }
+
+}
+
+/***MOBILE***/
+@media screen and (max-width: 1000px) {
+    header nav ul {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+   /***everything***/
+
+   #desktop {
+    display:none;
+    }
+
+   #mobile {
+       display: block !important;
+   }
+
+    * {
+        box-sizing: border-box;
+        font-family: lato;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    } 
+
+    .fa-bars {
+        display: block;
+    }
+
+    /***navigation***/
+
+    nav {
+        background-color: rgb(249, 112, 7);
+        width: fit-content;
+        padding: 20px 25px;
+        font-size: 30px;
+        color: white;
+    }
+
+    /***home***/
+
+    .home-page div {
+        margin: 20px auto 25px auto;
+        display: inline-block;
+    }
+
+    .home-page div i {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+        color: gray;
+    }
+
+    .home-page div i:first-child {
+        color: white;
+    }
+
+    header > h1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    .home-page {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        /*TODO: use position center*/
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dubai1.jpg) center;
+        background-size: cover;
+        color: white;
+    }
+
+    .home-page > .btn-filled {
+        margin: 30px 0 24px 40%;  
+        padding: 5px 10px;
+        background-color:rgb(249, 112, 7);
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        width: 20%;
+        font-size: 20px;
+    }
+
+    .heading1 {
+        font-weight: 100;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    /***page 2 section***/
+
+    .heading2 {
+        margin: 40px 0 10px 25px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .page2 {
+        background: url(images/dubai2.jpg);
+        background-size: cover;
+        opacity: 0.8;
+        padding-top: 170px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        margin: 0 25px;
+        margin-bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .page2 > p {
+        line-height: 25px;
+    }
+
+    /***page 3***/
+
+
+    .page3 {
+        margin: 0 25px;
+        margin-bottom: 30px; 
+    }
+
+
+    .page3 > div > img {
+        float: left;
+        height: 180px;
+        width: 220px;
+        padding-bottom: 30px;
+        object-fit: fill;
+        filter: brightness(70%);
+        padding-right: 25px;
+    }
+
+    .page3 > div:nth-child(2) > .heading3 {
+        color:rgb(249, 112, 7);
+    }
+
+    .page3 > div > .heading3 {
+        padding-bottom: 15px;
+    }
+
+    .page3 > div > .heading4 {
+        padding-bottom: 15px;
+    }
+
+    /***image gallery***/
+
+    .image-gallery {
+        margin: 0 25px;
+        margin-bottom: 30px;  
+    }
+
+    .image-gallery img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        filter: brightness(70%);
+    }
+
+    .image-gallery div p {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .image-gallery div .spec {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .arrows {
+        margin: 25px 0;
+        text-align: center;
+    }
+
+    .arrows i {
+        color: gray;
+    }
+
+    .arrows p {
+        display: inline-block;
+        margin-right: 45px;
+    }
+
+    .first {
+        /*TODO: Don't forget about box size*/
+        border: 1px rgb(249, 112, 7) solid;
+        padding-right: 17px;
+        padding-left: 17px;
+        padding-top: 7px;
+        padding-bottom: 8px;
+        margin-left: 25px;
+        color:rgb(249, 112, 7);
+    }
+
+    /***articles***/
+
+    .ballet {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dubai7.jpg);
+        background-size: cover;
+        height: 250px;
+        margin-bottom: 70px;        
+    }
+
+    .myheading {
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 55px;
+    }
+
+    .articles > .ballet > .btn-outline {
+        margin: 30px 0 24px 30%;  
+        padding: 5px 10px;
+        background-color: transparent;
+        border: 2px solid rgb(249, 112, 7);
+        color: white;
+        text-transform: uppercase;
+        width: 40%;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .articles > .ballet > .btn-outline > i {
+        margin-left: 8px;
+    }
+
+    .time {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dubai10.jpg);
+        background-size: cover;
+        height: 250px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .articles > .time > .btn-outline {
+        margin: 30px 0 24px 30%;  
+        padding: 5px 10px;
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        text-transform: uppercase;
+        width: 40%;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .articles div {
+        margin: 20px auto 25px 155px;
+        display: inline-block;
+        margin-bottom: 75px;
+    }
+
+    .articles div i {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+        color: gray;
+    }
+
+    .articles div i:first-child {
+        color: black;
+    }
+
+    .balloons {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dubai11.jpg);
+        background-size: cover;
+        height: 750px;
+        margin-bottom: 70px;  
+        margin-left: 35px;
+        margin-right: 35px;      
+    }
+
+    .articles > .balloons > .btn-outline {
+        margin: 180px 0 24px 27%;  
+        padding: 20px 12px;
+        background-color: rgb(249, 112, 7);
+        border: 2px solid rgb(249, 112, 7);
+        color: white;
+        text-transform: uppercase;
+        width: 45%;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .articles > .balloons > .btn-outline > i {
+        margin-left: 8px;
+    }
+
+    .selena {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/the_one_and_only_selena_gomez.jpg);
+        background-size: cover;
+        height: 650px;
+        margin-bottom: 70px; 
+        margin-left: 35px;
+        margin-right: 35px;           
+    }
+
+    .articles > .selena > .btn-outline {
+        margin: 310px 0 24px 27%;  
+        padding: 20px 12px;
+        background-color: transparent;
+        border: 2px solid rgb(249, 112, 7);
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 45%;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .articles > .selena > .btn-outline > i {
+        margin-left: 8px;
+    }
+
+    .birds {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dubai12.jpg);
+        background-size: cover;
+        height: 650px;
+        margin-bottom: 70px; 
+        margin-left: 35px;
+        margin-right: 35px;           
+    }
+
+    .articles > .birds > .btn-outline {
+        margin: 310px 0 24px 27%;  
+        padding: 20px 12px;
+        background-color: transparent;
+        border: 2px solid rgb(249, 112, 7);
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 45%;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .articles > .birds > .btn-outline > i {
+        margin-left: 8px;
+    }
+
+    .fa-bookmark {
+        color:rgb(249, 112, 7);
+        position: relative;
+        /*    TODO: just - "left: -45px and top: 9px;" */
+        left: -45px;
+        top: 9px;
+    }
+
+    
+}

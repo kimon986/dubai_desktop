@@ -1,5 +1,8 @@
 /***DESKTOP****/
 
+
+/*** why does the 'ballet' picture jump when i resize? ***/
+
 /***EVERYTHING***/
 
 @media screen and (min-width: 700px) {
@@ -55,8 +58,7 @@ header nav ul li {
     margin: 0 0 3% 0;
     color: white;
     background-size: cover; 
-    /* height: 550px; */
-    height: auto;
+    height: 550px;
     width: 100vw;
     background-position: center; 
 }
@@ -152,12 +154,12 @@ main {
   
   .content {
     display: flex;
-    min-height: 105%;
     justify-content: space-between;
   }
   
   .slider {
     display: flex;
+    padding-bottom: 50px;
   }
   
   .slider > div:first-child {
@@ -194,8 +196,9 @@ main {
   
   .news {
     display: flex;
-    height: 300%;
-    margin: 20px;
+    /* margin: 20px; */
+    margin: 5px;
+    height: 350px;
   }
   
   .article_footer {
@@ -204,9 +207,8 @@ main {
   }
   
   .main_new {
-    height: 334px; /*TODO*/
+    height: 334px; 
     width: 55%;
-    /* background-color: rgba(0,0,0, 0.8); */
     background: url(images_new/bed2.png);
     background-position: center;
     margin-right: 5%;
@@ -230,7 +232,6 @@ main {
   
   .side_new > div {
     width:45%;
-    height: auto;
   }
   
   .side_new > div:last-child {
@@ -238,23 +239,22 @@ main {
   }
   
   .reviews {
-    height: 300%;
     margin: 5px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 20%;
+    padding-bottom: 40px;
   }
   
   .review_content {
     display: flex;
     flex-wrap:wrap;
-    height: calc(100% - 30px);
     justify-content: space-around;
-    margin-top: 3%;
   }
   
   .pagination {
-    height: 150px;
+    height: 18px;
+    padding-top: 40px;
+    padding-bottom: 152px;
   }
 
   .heading_text {
@@ -273,6 +273,7 @@ main {
       font-weight: bold;
       letter-spacing: 1px;
       margin-left: 2.5%;
+      padding-bottom: 20px;
   }
 
   /***SIDE NEWS***/
@@ -305,7 +306,6 @@ main {
   .special2 {
     color:rgb(249, 112, 7);
     position: relative;
-    /*    TODO: just - "left: -45px and top: 9px;" */
     left: 105px;
     top: 9px;
     }
@@ -360,7 +360,6 @@ main {
     } */
 
     footer {
-        margin-top: 15%;
         background-color: rgba(211, 211, 211, 0.5);
     }
     
@@ -401,16 +400,19 @@ main {
     .aside_image {
         background: url(images_new/hotairballoon.png);
         background-position: center;
+        height: 479px;
     }
 
     .aside_image_2 {
         background: url(images_new/waterpic.png);
         background-position: center;
+        height: 479px;
     }
 
     .aside_image_3 {
         background: url(images_new/bigbird.png);
         background-position: center;
+        height: 479px;
     }
 
     /***arrow thingy***/
@@ -428,7 +430,7 @@ main {
     }
 
     .first {
-        /*TODO: Don't forget about box size*/
+        /*TODO: Don't forget about box size (question here)*/
         border-bottom: 1px rgb(249, 112, 7) solid;
         padding-right: 17px;
         padding-left: 17px;
@@ -447,7 +449,6 @@ main {
     
     .reviews > .review_content > .review_content_text {
         width: 35%;
-        height: 55%;
         margin: 5px;
     }
 
@@ -457,6 +458,7 @@ main {
     }
     .review_content__item {
         width: calc(50% - 15px);
+        padding-bottom: 37px;
     }
 
     .review_content__item:nth-child(2n - 1){
@@ -466,7 +468,7 @@ main {
     .review_title {
         font-weight: bold;
         font-size: 120%;
-        padding-bottom: 1.5%;
+        padding-top: 20px;
     }
 
     .special {
@@ -556,6 +558,9 @@ main {
     header nav ul {
         font-size: 80%;
     }
+    .pagination {
+        padding-bottom: 92px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -626,7 +631,7 @@ main {
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        /*TODO: use position center*/
+        position: center;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dubai1.jpg) center;
         background-size: cover;
         color: white;
@@ -745,7 +750,7 @@ main {
     }
 
     .first {
-        /*TODO: Don't forget about box size*/
+        /*TODO: Don't forget about box size (question)*/
         border: 1px rgb(249, 112, 7) solid;
         padding-right: 17px;
         padding-left: 17px;
@@ -760,8 +765,7 @@ main {
     .ballet {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dubai7.jpg);
         background-size: cover;
-        height: 250px;
-        margin-bottom: 70px;        
+        height: 271.68px;
     }
 
     .myheading {
@@ -906,7 +910,6 @@ main {
     .fa-bookmark {
         color:rgb(249, 112, 7);
         position: relative;
-        /*    TODO: just - "left: -45px and top: 9px;" */
         left: -45px;
         top: 9px;
     }

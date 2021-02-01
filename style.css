@@ -3,349 +3,374 @@
 /***EVERYTHING***/
 
 @media screen and (min-width: 700px) {
-* {
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    * {
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
 
-.fa-bars {
-    display: none;
-}
+    .fa-bars {
+        display: none;
+    }
 
-body > header > h1 {
-    display: flex;
-    justify-content: center;
-}
+    body > header > h1 {
+        display: flex;
+        justify-content: center;
+    }
 
-#mobile {
-    display: none;
-}
+    #mobile {
+        display: none;
+    }
 
-/***HEADING***/
+    /***HEADING***/
+    header h2 {
+        font-weight: bold;
+        font-size: 32px;
+        width: 80%;
+        margin: 3% 10% 0 10%;
+        display: flex;
+        justify-content: center;
+        font-family: Playfair Display;
+    }
 
-header h2 {
-    font-weight: bold;
-    font-size: 32px;
-    width: 80%;
-    margin: 3% 10% 0 10%;
-    display: flex;
-    justify-content: center;
-}
+    header nav ul {
+        width: 80%;
+        margin: 3% 10% 3% 10%;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: 100%;
+    }
 
-header nav ul {
-    width: 80%;
-    margin: 3% 10% 3% 10%;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-size: 100%;
-}
+    header nav ul li {
+        margin-right: 1%;
+    }
 
-header nav ul li {
-    margin-right: 1%;
-}
+    /***HERO***/
+    .hero-section {
+        background: url(images_new/bed1.jpg);
+        margin: 0 0 100px 0;
+        color: white;
+        background-size: cover;
+        height: 550px;
+        width: 100vw;
+        background-position: center;
+    }
 
-/***HERO***/
+    .hero-section .button-div {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 3% 0 3% 0;
+    }
 
-.hero-section {
-    background: url(images_new/bed1.jpg);
-    margin: 0 0 3% 0;
-    color: white;
-    background-size: cover; 
-    height: 550px;
-    width: 100vw;
-    background-position: center; 
-}
+    .hero-section > .button-div > button {
+        padding: 10px 25px;
+        font-size: 16px;
+        background-color: rgb(249, 112, 7);
+        border: none;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 2px;
+    }
 
-.hero-section .button-div {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    padding: 3% 0 3% 0;
-}
+    .hero-section > h1 {
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+        font-weight: 100;
+        padding-bottom: 3%;
+    }
 
-.hero-section > .button-div > button {
-    padding: 10px 25px;
-    font-size: 16px;
-    background-color: rgb(249, 112, 7);
-    border: none;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 2px;
-}
+    .hero-section > section {
+        display: flex;
+        justify-content: space-around;
+    }
 
-.hero-section > h1 {
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    font-size: 60px;
-    font-weight: 100;
-    padding-bottom: 3%;
-}
+    .hero-section > section > div > .rotate {
+        transform: rotate(90deg);
+    }
 
-.hero-section > section {
-    display: flex;
-    justify-content: space-around;
-}
+    .hero-section > section > .text-div {
+        padding-top: 10%;
+        text-align: center;
+        padding-bottom: 2%;
+    }
 
-.hero-section > section > div > .rotate {
-    transform: rotate(90deg);
-}
+    .hero-section > section > .prev {
+        position: relative;
+        top: 30px;
+    }
 
-.hero-section > section > .text-div {
-    padding-top: 10%;
-    text-align: center;
-    padding-bottom: 2%;
-}
+    .hero-section > section > .aft {
+        position: relative;
+        top: 30px;
+    }
 
-.hero-section > section > .prev {
-    position: relative;
-    top: 30px;
-}
+    .hero-section > section > .prev:after {
+        content: "__________";
+        position: relative;
+        top: -5px;
+        left: 7px;
+    }
 
-.hero-section > section > .aft {
-    position: relative;
-    top: 30px;
-}
+    .hero-section > section > .aft:before {
+        content: "__________";
+        position: relative;
+        top: -5px;
+        right: 7px;
+    }
 
-.hero-section > section > .prev:after {
-    content: "__________";
-    position: relative;
-    top: -5px;
-    left: 7px;
-}
+    .fa-caret-left {
+        position: relative;
+        top: 21px;
+        right: 14px;
+        font-size: 32px;
+    }
 
-.hero-section > section > .aft:before {
-    content: "__________";
-    position: relative;
-    top: -5px;
-    right: 7px;
-}
-
-.fa-caret-left {
-    position: relative;
-    top: 21px;
-    right: 14px;
-    font-size: 32px;
-}
-
-.fa-caret-right {
-    position: relative;
-    left: 50px;
-    bottom: 30px;
-    font-size: 32px;
-}
+    .fa-caret-right {
+        position: relative;
+        left: 50px;
+        bottom: 30px;
+        font-size: 32px;
+    }
 
 
-/***MAIN CONTENT***/
+    /***MAIN CONTENT***/
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
 
-main {
-    display: flex;
-    flex-direction:column;
-    margin-right: 7%;
-    margin-left: 7%;
-  }
-  
-  .content {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .slider {
-    display: flex;
-    padding-bottom: 50px;
-  }
-  
-  .slider > div:first-child {
-    width: 270px;
-    height: 130px;
-    margin: 10px 30px 10px 10px;
-  }
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
 
-  .slider > div:not(:first-child) {
-      width: 270px;
-      height: 100px;
-      margin: 20px 30px 20px 20px;
-  }
-  
-  aside {
-    display: flex;
-    flex-direction:column;
-    width:25%;
-    margin: 5px 10px;
-  }
-  
-  aside > div {
-    width: auto;
-    height: 379px;
-    margin: 5px 0;
-  }
-  
-  .articles {
-    display: flex;
-    flex-direction:column;
-    width: 85%;
-    margin: 5px 10px;
-  }
-  
-  .news {
-    display: flex;
-    /* margin: 20px; */
-    margin: 5px;
-    height: 350px;
-  }
-  
-  .article_footer {
-    height: 176px;
-    margin: 5px;
-  }
-  
-  .main_new {
-    height: 334px; 
-    width: 55%;
-    background: url(images_new/bed2.png);
-    background-position: center;
-    margin-right: 5%;
-  }
-  
-  .side_news {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .side_new {
-    height: 91px;
-    margin: 15px 0;
-    display: flex;
-  }
+    .slider {
+        display: flex;
+        position: relative;
+        padding-bottom: 50px;
+    }
 
-  .side_new:first-child{
-      margin:0 0 15px 0;
-  }
-  
-  .side_new > div {
-    width:45%;
-  }
-  
-  .side_new > div:last-child {
-    margin: 5px;
-  }
-  
-  .reviews {
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
-  }
-  
-  .review_content {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-  }
-  
-  .pagination {
-    height: 18px;
-    padding-top: 40px;
-    padding-bottom: 152px;
-  }
+    .slider > div:first-child {
+        width: 270px;
+        height: 130px;
+        margin: 10px 30px 10px 10px;
+    }
 
-  .heading_text {
-    font-weight: bold;
-    margin-left: 4%;
-    margin-top: 32%;
-  }
+    .slider > div:not(:first-child) {
+        width: 270px;
+        height: 100px;
+        margin: 20px 30px 20px 20px;
+    }
 
-  .content_text {
-      margin-left: 4%;
-  }
+    aside {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        margin: 31px 0 5px 10px;
+        max-width: 370px;
+    }
 
-  /***NEWS HEADING***/
-  .news_heading {
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 1px;
-      margin-left: 2.5%;
-      padding-bottom: 20px;
-  }
+    aside > div {
+        width: auto;
+        height: 379px;
+        margin: 5px 0;
+    }
 
-  /***SIDE NEWS***/
+    .articles {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin: 5px 10px;
+    }
 
-  .side_new_image {
-      background: url(images_new/bed3.png);
-  }
+    .news {
+        display: flex;
+        height: 350px;
+        margin: 5px 5px 80px;
+    }
 
-  .side_new_image_2 {
-      background: url(images_new/bed4.png);
-  }
+    .article_footer {
+        height: 176px;
+        margin: 5px;
+    }
 
-  .side_new_image_3 {
-      background: url(images_new/bed5.png);
-  }
+    .main_new {
+        height: 334px;
+        width: 55%;
+        background: url(images_new/bed2.png);
+        background-position: center;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 
-  .side_new_text > p:first-child {
-    font-weight: bold;
-    font-size: 90%;
-  }
+    .side_news {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+    }
 
-  .side_new_text > p:last-child {
-      font-size: 90%;
-  }
+    .side_new {
+        height: 91px;
+        margin: 15px 0;
+        display: flex;
+    }
 
-  .orange {
-    color:rgb(249, 112, 7);
-  }
+    .side_new:first-child {
+        margin: 0 0 15px 0;
+    }
 
-  .special2 {
-    color:rgb(249, 112, 7);
-    position: relative;
-    left: 105px;
-    top: 9px;
+    .side_new > div {
+        width: 45%;
+    }
+
+    .side_new > div:last-child {
+        margin: 5px;
+    }
+
+    .reviews {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .review_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .pagination {
+        height: 18px;
+        padding-top: 40px;
+        padding-bottom: 152px;
+    }
+
+    .heading_text {
+        font-weight: bold;
+        padding:0 20px;
+    }
+
+    .content_text {
+        padding:5px 20px 20px 20px;
+    }
+
+    /***NEWS HEADING***/
+    .news_heading {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-left: 2.5%;
+        padding-bottom: 20px;
+    }
+
+    /***SIDE NEWS***/
+    .side_new_image {
+        background-size: cover;
+        display:flex;
+        justify-content: flex-end;
+    }
+
+    .side_new_image_1 {
+        background-image: url(images_new/bed3.png);
+    }
+
+    .side_new_image_2 {
+        background-image: url(images_new/bed4.png);
+    }
+
+    .side_new_image_3 {
+        background-image: url(images_new/bed5.png);
+    }
+
+    .side_new_text > p:first-child {
+        font-weight: bold;
+        font-size: 90%;
+    }
+
+    .side_new_text > p:last-child {
+        font-size: 90%;
+    }
+
+    .orange {
+        color: rgb(249, 112, 7);
+    }
+
+    .special2 {
+        color: rgb(249, 112, 7);
+        position: relative;
+        right: 9px;
+        top: 9px;
     }
 
     /***REVIEWS IMAGES***/
     .review_content_image {
-        background: url(images_new/1.png);
         background-position: center;
         width: 100%;
         height: 200px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .review_content_image_1 {
+        background-image: url(images_new/1.png);
     }
 
     .review_content_image_2 {
-        background: url(images_new/2.png);
-        background-position: center;
+        background-image: url(images_new/2.png);
     }
 
     .review_content_image_3 {
-        background: url(images_new/3.png);
-        background-position: center;
+        background-image: url(images_new/3.png);
     }
 
     .review_content_image_4 {
-        background: url(images_new/4.png);
-        background-position: center;
+        background-image: url(images_new/4.png);
     }
 
     /***SLIDER***/
 
-    .slider_image {
-        background: url(images_new/watch.png);
+    .slider > span:first-child{
+        position: absolute;
+        left: 0;
+        top: calc(50% - 44px);
+        width: 44px;
+        height: 44px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+    }
+
+    .slider > span:last-child{
+        position: absolute;
+    }
+
+    .slider_image_1 {
+        background-image: url(images_new/watch.png);
     }
 
     .slider_image_2 {
-        background: url(images_new/bottom1.png);
+        background-image: url(images_new/bottom1.png);
     }
 
     .slider_image_3 {
-        background: url(images_new/bottom2.png);
+        background-image: url(images_new/bottom2.png);
     }
 
     .slider_image_4 {
-        background: url(images_new/bottom3.png);
+        background-image: url(images_new/bottom3.png);
     }
 
     /* footer {
@@ -355,11 +380,10 @@ main {
         background-color: rgba(241, 232, 232, 0.856);
         margin-top: 15%;
     } */
-
     footer {
         background-color: rgba(211, 211, 211, 0.5);
     }
-    
+
     footer div {
         display: flex;
         justify-content: space-around;
@@ -369,7 +393,7 @@ main {
         padding-bottom: 2%;
         letter-spacing: 1px;
     }
-    
+
     footer ul {
         list-style: none;
         text-transform: uppercase;
@@ -382,12 +406,16 @@ main {
         padding-bottom: 2%;
         border-bottom: 1px solid rgb(174, 171, 171);
     }
-    
+
+    footer > div > p {
+        font-family: Playfair Display;
+    }
+
     footer > .div-small > small {
         font-size: 10px;
         color: rgb(174, 171, 171);
     }
-    
+
     footer > .div-small {
         justify-content: flex-end;
         width: 90%;
@@ -395,21 +423,32 @@ main {
 
     /***ASIDE***/
     .aside_image {
-        background: url(images_new/hotairballoon.png);
         background-position: center;
         height: 479px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .aside_image_1 {
+        background: url(images_new/hotairballoon.png);
     }
 
     .aside_image_2 {
         background: url(images_new/waterpic.png);
-        background-position: center;
-        height: 479px;
     }
 
     .aside_image_3 {
         background: url(images_new/bigbird.png);
-        background-position: center;
-        height: 479px;
+    }
+
+    aside > div{
+        margin: 15px 0;
+    }
+
+    aside p {
+        font-family: Playfair Display;
     }
 
     /***arrow thingy***/
@@ -434,34 +473,34 @@ main {
         padding-top: 7px;
         padding-bottom: 8px;
         margin-left: 25px;
-        color:rgb(249, 112, 7);
+        color: rgb(249, 112, 7);
     }
 
     /***ballet***/
-
     .article_footer {
         background: url(images_new/ballet.png);
         background-position: center center;
     }
-    
+
     .reviews > .review_content > .review_content_text {
         width: 35%;
         margin: 5px;
     }
 
     .review_content__container {
-        display:flex;
+        display: flex;
         flex-wrap: wrap;
     }
+
     .review_content__item {
         width: calc(50% - 15px);
         padding-bottom: 37px;
     }
 
-    .review_content__item:nth-child(2n - 1){
+    .review_content__item:nth-child(2n - 1) {
         margin-right: 30px;
     }
-    
+
     .review_title {
         font-weight: bold;
         font-size: 120%;
@@ -470,18 +509,17 @@ main {
 
     .special {
         position: relative;
-        left: 10;
-        top: 10;
-        color:rgb(249, 112, 7);
+        right: 10px;
+        top: 10px;
+        color: rgb(249, 112, 7);
     }
 
     .aside_image .button-div {
-        padding: 10px;
         display: flex;
         justify-content: center;
-        padding: 75% 0 3% 0;
+        padding-bottom: 30px;
     }
-    
+
     .aside_image > .button-div > button {
         padding: 10px 25px;
         font-size: 16px;
@@ -504,13 +542,6 @@ main {
         padding-top: 10%;
     }
 
-    .aside_image_2 .button-div {
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        padding: 75% 0 3% 0;
-    }
-    
     .aside_image_2 > .button-div > button {
         padding: 10px 25px;
         font-size: 16px;
@@ -537,7 +568,7 @@ main {
         justify-content: center;
         padding: 7% 0 3% 0;
     }
-    
+
     .slider > .slider_image > .button-div > button {
         padding: 7px 20px;
         font-size: 16px;
@@ -555,6 +586,7 @@ main {
     header nav ul {
         font-size: 80%;
     }
+
     .pagination {
         padding-bottom: 92px;
     }
@@ -562,15 +594,14 @@ main {
 
 @media screen and (max-width: 700px) {
 
-   /***everything***/
-
-   #desktop {
-    display:none;
+    /***everything***/
+    #desktop {
+        display: none;
     }
 
-   #mobile {
-       display: block !important;
-   }
+    #mobile {
+        display: block !important;
+    }
 
     * {
         box-sizing: border-box;
@@ -579,14 +610,13 @@ main {
         padding: 0;
         box-sizing: border-box;
         overflow-x: hidden;
-    } 
+    }
 
     .fa-bars {
         display: block;
     }
 
     /***navigation***/
-
     nav {
         background-color: rgb(249, 112, 7);
         width: fit-content;
@@ -596,7 +626,6 @@ main {
     }
 
     /***home***/
-
     .home-page div {
         margin: 20px auto 25px auto;
         display: inline-block;
@@ -635,9 +664,9 @@ main {
     }
 
     .home-page > .btn-filled {
-        margin: 30px 0 24px 40%;  
+        margin: 30px 0 24px 40%;
         padding: 5px 10px;
-        background-color:rgb(249, 112, 7);
+        background-color: rgb(249, 112, 7);
         border: none;
         color: white;
         text-transform: uppercase;
@@ -653,7 +682,6 @@ main {
     }
 
     /***page 2 section***/
-
     .heading2 {
         margin: 40px 0 10px 25px;
         text-transform: uppercase;
@@ -677,11 +705,9 @@ main {
     }
 
     /***page 3***/
-
-
     .page3 {
         margin: 0 25px;
-        margin-bottom: 30px; 
+        margin-bottom: 30px;
     }
 
 
@@ -696,7 +722,7 @@ main {
     }
 
     .page3 > div:nth-child(2) > .heading3 {
-        color:rgb(249, 112, 7);
+        color: rgb(249, 112, 7);
     }
 
     .page3 > div > .heading3 {
@@ -708,10 +734,9 @@ main {
     }
 
     /***image gallery***/
-
     .image-gallery {
         margin: 0 25px;
-        margin-bottom: 30px;  
+        margin-bottom: 30px;
     }
 
     .image-gallery img {
@@ -754,11 +779,10 @@ main {
         padding-top: 7px;
         padding-bottom: 8px;
         margin-left: 25px;
-        color:rgb(249, 112, 7);
+        color: rgb(249, 112, 7);
     }
 
     /***articles***/
-
     .ballet {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dubai7.jpg);
         background-size: cover;
@@ -775,7 +799,7 @@ main {
     }
 
     .articles > .ballet > .btn-outline {
-        margin: 30px 0 24px 30%;  
+        margin: 30px 0 24px 30%;
         padding: 5px 10px;
         background-color: transparent;
         border: 2px solid rgb(249, 112, 7);
@@ -799,7 +823,7 @@ main {
     }
 
     .articles > .time > .btn-outline {
-        margin: 30px 0 24px 30%;  
+        margin: 30px 0 24px 30%;
         padding: 5px 10px;
         background-color: transparent;
         border: 2px solid white;
@@ -831,13 +855,13 @@ main {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dubai11.jpg);
         background-size: cover;
         height: 750px;
-        margin-bottom: 70px;  
+        margin-bottom: 70px;
         margin-left: 35px;
-        margin-right: 35px;      
+        margin-right: 35px;
     }
 
     .articles > .balloons > .btn-outline {
-        margin: 180px 0 24px 27%;  
+        margin: 180px 0 24px 27%;
         padding: 20px 12px;
         background-color: rgb(249, 112, 7);
         border: 2px solid rgb(249, 112, 7);
@@ -856,13 +880,13 @@ main {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/the_one_and_only_selena_gomez.jpg);
         background-size: cover;
         height: 650px;
-        margin-bottom: 70px; 
+        margin-bottom: 70px;
         margin-left: 35px;
-        margin-right: 35px;           
+        margin-right: 35px;
     }
 
     .articles > .selena > .btn-outline {
-        margin: 310px 0 24px 27%;  
+        margin: 310px 0 24px 27%;
         padding: 20px 12px;
         background-color: transparent;
         border: 2px solid rgb(249, 112, 7);
@@ -882,13 +906,13 @@ main {
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/dubai12.jpg);
         background-size: cover;
         height: 650px;
-        margin-bottom: 70px; 
+        margin-bottom: 70px;
         margin-left: 35px;
-        margin-right: 35px;           
+        margin-right: 35px;
     }
 
     .articles > .birds > .btn-outline {
-        margin: 310px 0 24px 27%;  
+        margin: 310px 0 24px 27%;
         padding: 20px 12px;
         background-color: transparent;
         border: 2px solid rgb(249, 112, 7);
@@ -905,11 +929,11 @@ main {
     }
 
     .fa-bookmark {
-        color:rgb(249, 112, 7);
+        color: rgb(249, 112, 7);
         position: relative;
         left: -45px;
         top: 9px;
     }
 
-    
+
 }

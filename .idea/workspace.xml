@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="141c39d1-7dc4-451e-916c-dd7c46c362c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images_new/rectangle.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
       <updated>1611853954850</updated>
       <workItem from="1611853956750" duration="3595000" />
       <workItem from="1612003233185" duration="2000" />
-      <workItem from="1612199134527" duration="2986000" />
+      <workItem from="1612199134527" duration="3222000" />
     </task>
     <servers />
   </component>

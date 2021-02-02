@@ -67,13 +67,19 @@
     }
 
     .hero-section > .button-div > button {
+        text-transform: uppercase;
         padding: 10px 25px;
         font-size: 16px;
-        background-color: rgb(249, 112, 7);
-        border: none;
+        background-color: rgba(46, 44, 44, 0.164);
+        border: 2px solid rgb(249, 112, 7);
         text-transform: uppercase;
         color: white;
         letter-spacing: 2px;
+    }
+
+    .hero-section > .button-div > button:hover {
+        background-color: rgb(249, 112, 7);
+        transition: all 0.2s ease-in;
     }
 
     .hero-section > h1 {
@@ -339,9 +345,8 @@
 
     /***SLIDER***/
 
-    .slider > span:first-child{
+    .slider > .slider__span {
         position: absolute;
-        left: 0;
         top: calc(50% - 44px);
         width: 44px;
         height: 44px;
@@ -353,8 +358,13 @@
         background-color: #fff;
     }
 
+    .slider > span:first-child{
+        left: 0;
+    }
+
     .slider > span:last-child{
-        position: absolute;
+        right: 0;
+        transform: rotate(180deg);
     }
 
     .slider_image_1 {
@@ -463,16 +473,19 @@
     .arrows p {
         display: inline-block;
         margin-right: 45px;
-    }
-
-    .first {
-        /*TODO: Don't forget about box size (question here)*/
-        border-bottom: 1px rgb(249, 112, 7) solid;
         padding-right: 17px;
         padding-left: 17px;
         padding-top: 7px;
         padding-bottom: 8px;
+    }
+
+    .first {
+        /*TODO: Don't forget about box size (question here)*/
         margin-left: 25px;
+    }
+
+    .arrows p:hover {
+        border-bottom: 1px rgb(249, 112, 7) solid;
         color: rgb(249, 112, 7);
     }
 
@@ -523,11 +536,16 @@
     .aside_image > .button-div > button {
         padding: 10px 25px;
         font-size: 16px;
-        background-color: rgb(249, 112, 7);
-        border: none;
+        background-color: rgba(46, 44, 44, 0.164);
+        border: 2px solid rgb(249, 112, 7);
         text-transform: uppercase;
         color: white;
         letter-spacing: 2px;
+    }
+
+    .aside_image > .button-div > button:hover {
+        background-color: rgb(249, 112, 7);
+        transition: all 0.2s ease-in;
     }
 
     .aside_image > .button-div > button > i {
@@ -542,25 +560,15 @@
         padding-top: 10%;
     }
 
-    .aside_image_2 > .button-div > button {
-        padding: 10px 25px;
-        font-size: 16px;
-        background-color: rgba(46, 44, 44, 0.164);
-        border: 2px solid rgb(249, 112, 7);
-        text-transform: uppercase;
-        color: white;
-        letter-spacing: 2px;
-    }
-
     .aside_image_2 > .button-div > button > i {
         margin-left: 8px;
     }
 
-    .slider > .slider_image > .time {
+    .slider > .slider_image > .slider_image_content > .time {
         text-transform: uppercase;
         text-align: center;
         padding-top: 15%;
-    }
+    } 
 
     .slider .button-div {
         padding: 10px;
@@ -569,7 +577,7 @@
         padding: 7% 0 3% 0;
     }
 
-    .slider > .slider_image > .button-div > button {
+    .slider > .slider_image > .slider_image_content > .button-div > button {
         padding: 7px 20px;
         font-size: 16px;
         background-color: rgba(46, 44, 44, 0.164);
@@ -577,6 +585,18 @@
         text-transform: uppercase;
         color: white;
         letter-spacing: 2px;
+    } 
+
+    /***hovers + effects***/
+
+    .slider > .slider_image:hover {
+        transform: scale(1.3);
+        transition: all .25s ease-in-out;
+    }
+
+
+    .rotate_rectangle {
+        transform: rotate(180deg);
     }
 
 }
@@ -861,6 +881,18 @@
     }
 
     .articles > .balloons > .btn-outline {
+        margin: 30px 0 24px 30%;
+        padding: 5px 10px;
+        background-color: transparent;
+        border: 2px solid rgb(249, 112, 7);
+        color: white;
+        text-transform: uppercase;
+        width: 40%;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .articles > .balloons > .btn-outline:hover {
         margin: 180px 0 24px 27%;
         padding: 20px 12px;
         background-color: rgb(249, 112, 7);
@@ -934,6 +966,7 @@
         left: -45px;
         top: 9px;
     }
+
 
 
 }

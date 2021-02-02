@@ -3,6 +3,52 @@
 /***EVERYTHING***/
 
 @media screen and (min-width: 700px) {
+
+    /*** additions ***/
+    .slider_image_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider_image_text {
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s, visibility .2s;
+    }
+
+    .slider_image_content:hover .slider_image_text {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .slider_image_button {
+        padding: 5px 15px;
+        font-size: 13px;
+        background-color: rgba(46, 44, 44, 0.164);
+        border: 2px solid #fff;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 2px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s, visibility .2s;
+    }
+
+    .slider_image_content:hover .slider_image_button {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /***overall***/
+
     * {
         box-sizing: border-box;
         font-family: 'Lato', sans-serif;

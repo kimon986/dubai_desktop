@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="141c39d1-7dc4-451e-916c-dd7c46c362c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HW.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,8 @@
       <updated>1611853954850</updated>
       <workItem from="1611853956750" duration="3595000" />
       <workItem from="1612003233185" duration="2000" />
-      <workItem from="1612199134527" duration="3222000" />
+      <workItem from="1612199134527" duration="3547000" />
+      <workItem from="1612460315747" duration="1492000" />
     </task>
     <servers />
   </component>
@@ -85,6 +87,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="458" y="246" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1611854939501">
